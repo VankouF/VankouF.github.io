@@ -78,8 +78,8 @@
                 <name>Ke Fan (樊珂) </name>  <br> <br>
               </p>
               <p style="font-family:verdana"> I am now a third year Ph.D. student at the Shanghai Jiao Tong University (<a href="https://www.sjtu.edu.cn/">SJTU</a>), advised by <a href="https://dmcv.sjtu.edu.cn/">Lizhuang Ma</a>. 
-                <br> I was a research intern at Tencent, YouTu Lab.
-                <br> I'm interested in 3D content generation and animation, mainly focus on <strong>3D Human Motion Generation</strong>.  
+                <!-- <br> I was a research intern at Tencent, YouTu Lab. -->
+                <br> I'm interested in VLA, Animation, Video Generation, Large Model, mainly focus on <strong>3D Human Motion Generation</strong>.  
               </p>
  
  
@@ -103,7 +103,9 @@
                       <heading>News</heading>
                       <p>
                       </p><ul>
-			<li><strong>News (Jul 2024): One paper FreeMotion are accepted to ECCV 2024.</strong></li>
+      <li><strong>News (June 2025): Two paper GoToZero and Motionstreamer are accepted to ICCV 2025.</strong></li>
+      <li>News (Apr 2025): One paper TIMotion are accepted to CVPR 2025.</li>
+			<li>News (Jul 2024): One paper FreeMotion are accepted to ECCV 2024.</li>
 			<li>News (Feb 2024): Two papers are accepted to CVPR 2024.</li>
       <li>News (Apr 2023): One paper is accepted to IJCAI 2022.</li>
                       </ul>
@@ -118,14 +120,126 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 		
-		
+          <tr onmouseout="gotozero_stop()" onmouseover="gotozero_start()">
+    
+            <td style="padding:30px;width:25%;vertical-align:middle">
+                        <div class="one">
+                          <div class="two" id="gotozero_image" style="opacity: 0;">
+                            <img src="./static/gotozero.png" width="180", height="100"></div>
+                          <img src="./static/gotozero.png" width="180", height="100">
+                        </div>
+                        <script type="text/javascript">
+                          function gotozero_start() {
+                            document.getElementById('gotozero_image').style.opacity = "1";
+                          }
+          
+                          function gotozero_stop() {
+                            document.getElementById('gotozero_image').style.opacity = "0";
+                          }
+                          gotozero_stop()
+                        </script>
+                      </td>
+                        <td style="padding:20px;width:75%;vertical-align:middle">
+                          <papertitle>Go to Zero: Towards Zero-shot Motion Generation with Million-scale Data</papertitle>
+                          <br>
+                          <strong>Ke Fan</strong>, Shulin Lu, Minyue Dai, Runyi Yu, Lixing Xiao, Zhiyang Dou, Junting Dong, Lizhuang Ma, Jingbo Wang
+              <br>
+                                        <em>ICCV</em>, 2025
+                          <br>
+              <a href="https://vankouf.github.io/MotionMillion/">project page</a>
+                          /
+                          <a href="">paper</a>
+                          /
+                          <a href="https://github.com/VankouF/MotionMillion-Codes">code</a>
+                          <p></p>
+                          <p></p>
+                        </td>
+                      </tr>
+          
+                      <tr onmouseout="TIMotion_stop()" onmouseover="TIMotion_start()">
+    
+                        <td style="padding:30px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                      <div class="two" id="motionstreamer_image" style="opacity: 0;">
+                                        <img src="./static/motionstreamer.png" width="180", height="100"></div>
+                                      <img src="./static/motionstreamer.png" width="180", height="100">
+                                    </div>
+                                    <script type="text/javascript">
+                                      function motionstreamer_start() {
+                                        document.getElementById('motionstreamer_image').style.opacity = "1";
+                                      }
+                      
+                                      function motionstreamer_stop() {
+                                        document.getElementById('motionstreamer_image').style.opacity = "0";
+                                      }
+                                      motionstreamer_stop()
+                                    </script>
+                                  </td>
+                                    <td style="padding:20px;width:75%;vertical-align:middle">
+                                      <papertitle>MotionStreamer: Streaming Motion Generation
+                                        via Diffusion-based Autoregressive Model
+                                        in Causal Latent Space</papertitle>
+                                      <br>
+                                      Lixing Xiao, Shulin Lu, Huaijin Pi, Runyi Yu, <strong>Ke Fan</strong>, Liang Pan, Yueer Zhou, Ziyong Feng, Xiaowei Zhou, Sida Peng, Jingbo Wang
+                          <br>
+                                                    <em>ICCV</em>, 2025
+                                      <br>
+                          <a href="https://zju3dv.github.io/MotionStreamer/">project page</a>
+                                      /
+                                      <a href="https://arxiv.org/pdf/2503.15451">paper</a>
+                                      /
+                                      <a href="https://github.com/zju3dv/MotionStreamer/">code</a>
+                                      /
+                                      <a href="https://github.com/Li-xingXiao/272-dim-Motion-Representation">motion representation</a>
+                                      <p></p>
+                                      <p></p>
+                                    </td>
+                                  </tr>
+                      
+                                  <tr onmouseout="TIMotion_stop()" onmouseover="TIMotion_start()">
+    
+                                    <td style="padding:30px;width:25%;vertical-align:middle">
+                                                <div class="one">
+                                                  <div class="two" id="TIMotion_image" style="opacity: 0;">
+                                                    <img src="./static/TIMotion.png" width="180", height="100"></div>
+                                                  <img src="./static/TIMotion.png" width="180", height="100">
+                                                </div>
+                                                <script type="text/javascript">
+                                                  function TIMotion_start() {
+                                                    document.getElementById('TIMotion_image').style.opacity = "1";
+                                                  }
+                                  
+                                                  function TIMotion_stop() {
+                                                    document.getElementById('TIMotion_image').style.opacity = "0";
+                                                  }
+                                                  TIMotion_stop()
+                                                </script>
+                                              </td>
+                                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                                  <papertitle>TIMotion: Streaming Motion Generation
+                                                    via Diffusion-based Autoregressive Model
+                                                    in Causal Latent Space</papertitle>
+                                                  <br>
+                                                  Yabiao Wang, Shuo Wang, Jiangning Zhang, <strong>Ke Fan</strong>, Jiafu Wu, Zhucun Xue, Yong Liu
+                                      <br>
+                                                                <em>CVPR</em>, 2025
+                                                  <br>
+                                      <a href="https://aigc-explorer.github.io/TIMotion-page/">project page</a>
+                                                  /
+                                                  <a href="https://arxiv.org/abs/2408.17135">paper</a>
+                                                  /
+                                                  <a href="https://github.com/AIGC-Explorer/TIMotion.git">code</a>
+                                                  <p></p>
+                                                  <p></p>
+                                                </td>
+                                              </tr>
+
 		<tr onmouseout="free_stop()" onmouseover="free_start()">
+    
 		<td style="padding:20px;width:25%;vertical-align:middle">
 	              <div class="one">
-	                <div class="two" id="free_image" style="opacity: 0;"><video width="100%" height="100%" muted="" autoplay="" loop="">
-	                <source src="videos/freemotion.mp4" type="video/mp4">
-	                Your browser does not support the video tag.
-	                </video></div>
+	                <div class="two" id="freemotion_image" style="opacity: 0;">
+	                  <img src="./static/freemotion.png" width="160"></div>
 	                <img src="./static/freemotion.png" width="160">
 	              </div>
 	              <script type="text/javascript">
